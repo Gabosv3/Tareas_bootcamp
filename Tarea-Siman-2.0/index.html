@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siman</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- link de iconos -->
+    <script src="https://kit.fontawesome.com/c33decd863.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Encabezado  para la barra de navegación -->
+    <header class="container-header">
+        <nav class="container-Buscador">
+            <section class="container-logo">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/5526a418-1a12-4bfc-9077-5a1b23f8d8c1___19999b42961a45dbb2f4293973939c0b.svg"
+                    alt="" />
+            </section>
+            <section class="buscador">
+                <form>
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="Buscar" aria-label="Search" />
+                </form>
+            </section>
+            <section class="container-perfil">
+                <a href="#">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-minecart"></i>
+                </a>
+            </section>
+        </nav>
+         <!-- Segunda barra de navegación con categorías y enlaces adicionales -->
+        <nav class="navbar w-100 bg-light py-3">
+            <div class="container-fluid">
+                <div>
+                    <i class="bi bi-list"></i>
+                    <a class="h2 fw-bold decoration" href="#">Departamentos</a>
+                </div>
+                <div class="decoration-a">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <a class="navbar-brand" href="assets/page/rebajas.html">Rebajas</a>
+                    <a class="navbar-brand" href="assets/page/school.html">Back to school</a>
+                    <a class="navbar-brand" href="#">Exclusivo Online</a>
+                    <a class="navbar-brand" href="#">Celulares</a>
+                    <a class="navbar-brand" href="#">Calzado</a>
+                    <a class="navbar-brand" href="#">Tecnología</a>
+                    <a class="navbar-brand" href="#">Muebles</a>
+                    <a class="navbar-brand" href="#">Belleza</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="container-principal my-3">
+        <!-- Anuncio principal -->
+        <section class="container-anuncio text-center">
+            <a href="#">ONLINE FEST | HASTA 6 MESES SIN INTERESES</a>
+        </section>
+
+        <!-- Sección de venta -->
+        <div class="d-flex justify-content-center my-4">
+            <section class="container-sale text-center">
+                <article class="titulo">
+                    <h1>NEW</h1>
+                    <h2>FASHION</h2>
+                    <h1>SALE</h1>
+                </article>
+                <article class="imagen">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/background/20220817/pngtree-stylish-woman-shops-for-clothes-with-credit-card-happy-and-smiling-photo-image_48164174.jpg" alt="Imagen de venta de moda">
+                </article>
+            </section>
+        </div>
+
+        <!-- Anuncio adicional -->
+        <section class="container-anuncio-2 text-center my-4">
+            <!-- Contenido del anuncio adicional -->
+        </section>
+
+        <!-- Carrusel de imágenes -->
+        <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="carousel">
+            <!-- Indicadores del carrusel -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Items del carrusel -->
+            <div class="carousel-inner rounded-5">
+                <!-- Primer item del carrusel -->
+                <div class="carousel-item active">
+                    <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/699e6ea9-334f-4c5f-b132-e04645d17dfb___c91fb858ff045a623b4915a24f56dd43.jpg" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block text-start">
+                        <a href="#" class="h5">Comprar ahora</a>
+                    </div>
+                </div>
+                <!-- Segundo item del carrusel -->
+                <div class="carousel-item">
+                    <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/18e8f281-f44d-44bf-a2df-3711108b30b7___5f63e819655bc2b495692d9e496e8352.gif" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <!-- Tercer item del carrusel -->
+                <div class="carousel-item">
+                    <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/9b5b3d91-ca08-4d61-9581-9acbe06b8fed___2a242c842faf372a44ed13a4dab09619.jpg" class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+            </div>
+            <!-- Controles de navegación del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Sección de artículos de ropa -->
+        <section class="container-grid">
+            <article class="Ropa-articulo1">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/2c2e188a-cdc6-430d-947c-aca0937c05e9___65d4392fd05244daf8a3d61369914221.jpg" alt="Artículo de ropa 1">
+            </article>
+            <article class="Ropa-articulo2">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/f10524b8-580a-4997-8a51-ec3015e5bf3a___a9a842217167ff6da36e0ca2ac17f0ca.jpg" alt="Artículo de ropa 2">
+            </article>
+            <article class="Ropa-articulo3">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/b422ae7f-3053-47d0-925e-e6a64ce83de2___fbb8b18a963090ee5fabb822586f53bd.jpg" alt="Artículo de ropa 3">
+            </article>
+            <article class="Ropa-articulo4">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/f9de79ca-95e5-44ab-ade7-677cdba7feca___f54e126f45a51fed58c25a4fc450e069.jpg" alt="Artículo de ropa 4">
+            </article>
+            <article class="Ropa-articulo5">
+                <img src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/3a8c7461-76eb-4093-93df-0ace775b9b62___801249c61015a24455a48097e7885694.jpg" alt="Artículo de ropa 5">
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- navegacion del footer -->
+        <section class="informacion-footer">
+            <ul class="footer-seccion ocultar-footer">
+                <li><h3>Siman Corporativo</h3></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Visio y mision </a></li>
+                <li><a href="#">Historia</a></li> 
+                <li><a href="#">Sucursales</a></li> 
+                <li><a href="#">Servicios</a></li>                      
+            </ul>
+            <ul class="footer-seccion ocultar-footer">
+                <li><h3>Programas</h3></li>
+                <li><a href="#">Monedero</a></li>
+                <li><a href="#">Garantía</a></li>
+                <li><a href="#">Credisiman</a></li>
+                <li><a href="#">Marketplace</a></li>
+            </ul>
+            <ul class="footer-seccion ocultar-footer">
+                <li><h3>Servicio al cliente</h3></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Garantía de ventas</a></li> 
+                <li><a href="#">Información sobre envíos</a></li> 
+                <li><a href="#">Términos y condiciones</a></li>                      
+            </ul>
+        </section>
+        <!-- formulario de suscripcion  -->
+        <section class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>Suscríbete a nuestro Newsletter y obtén un 10% de <br> descuento en tu primera compra.</p>
+            <form action="">
+                <input type="email" class="email" placeholder="Ej: contacto@mail.com">
+                <input type="submit" class="suscribirse" value="Suscribirse">
+            </form>
+            <div class="redes-footer">
+                <a href="#" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
+                <a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

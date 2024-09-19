@@ -1,0 +1,361 @@
+/* Importación de fuentes de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Permanent+Marker&display=swap");
+
+/* Estilos generales para eliminar márgenes y rellenos predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y border no afecten el ancho total */
+}
+
+/* Estilos para los anuncios */
+.container-anuncio,
+.container-anuncio-2 {
+  width: 90vw;
+  height: auto;
+  margin: 10px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  padding: 3vh;
+  border-radius: 10px;
+}
+
+.container-anuncio {
+  background-image: url(https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/ce6dfb25-46a1-4353-85d1-cbfeada081a9___fe0bbe155110b1b9466b84425a68bf9c.jpg);
+}
+
+.container-anuncio-2 {
+  background-image: url(https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/e96944c2-158d-4ea9-bd32-5c67644af7e7___34b9f87df7c0c8caaff8c47b609c463c.gif);
+}
+
+.container-anuncio a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos para el navbar */
+.container-header {
+  width: 98.9vw;
+  height: auto;
+  justify-content: center;
+}
+
+.container-Buscador {
+  width: 98.9vw;
+  height: 70px;
+  padding: 0 20px;
+  background-color: rgb(168, 51, 56);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 14px;
+  grid-row-gap: 5px;
+}
+
+/* Logo dentro del navbar */
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.container-logo img {
+  height: 24px;
+}
+
+/* Estilos para el buscador */
+.buscador {
+  display: flex;
+  align-items: center;
+}
+
+.buscador form {
+  width: 100%;
+  display: flex;
+}
+
+.buscador i {
+  background-color: #7a232e;
+  height: 50px;
+  color: white;
+  border: 2px solid #7a232e;
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+}
+
+.buscador input {
+  background-color: #7a232e;
+  width: 90%;
+  height: 50px;
+  border: 2px solid #7a232e;
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+}
+
+.buscador input::placeholder {
+  color: #ffffffe0;
+  font-size: 1.5rem;
+}
+
+/* Estilos para el perfil en el navbar */
+.container-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container-perfil i {
+  padding: 0 1vw;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.container-fluid i {
+  padding: 0 1vw;
+  font-size: 2rem;
+  color: #000000;
+}
+
+/* Estilos de decoración y hover */
+.decoration {
+  text-decoration: none;
+}
+
+.decoration-a a:hover {
+  text-decoration: underline !important;
+}
+
+/* Contenedor principal de la sección de venta */
+.container-sale {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 15px;
+}
+
+.container-sale .titulo {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.container-sale .titulo h2 {
+  color: #c8a04b;
+  font-family: "Permanent Marker", cursive;
+  font-size: 7rem;
+  font-style: italic;
+  width: 100%;
+}
+
+.container-sale .titulo h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 5rem;
+  padding: 0 3rem;
+}
+
+.container-sale .imagen {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-top: 1rem;
+}
+
+.container-sale .imagen img {
+  height: 60vh;
+  border-radius: 50%;
+}
+
+/* Contenedor principal del contenido */
+.container-principal {
+  width: 90vw;
+  margin: auto;
+}
+
+/* Estilos para la sección de ropa */
+.container-grid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.container-grid img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.Ropa-articulo1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.Ropa-articulo2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.Ropa-articulo3 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.Ropa-articulo4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.Ropa-articulo5 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas menores a 1200px */
+@media (max-width: 1200px) {
+  .decoration-a{
+    display: none;
+  }
+
+  .container-sale .titulo h2 {
+    font-size: 4.5rem;
+  }
+
+  .container-sale .titulo h1 {
+    font-size: 2.5rem;
+  }
+
+  .container-sale .imagen img {
+    height: 50vh;
+  }
+
+ 
+}
+
+/* Pantallas menores a 768px */
+@media (max-width: 768px) {
+  
+  .container-Buscador {
+    grid-template-columns: 1fr;
+    height: auto;
+    grid-row-gap: 10px;
+  }
+
+  .container-sale {
+    width: 95vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .container-sale .titulo {
+    padding: 2rem;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .container-sale .titulo h2 {
+    font-size: 4rem;
+  }
+
+  .container-sale .titulo h1 {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  .container-sale .imagen {
+    margin-top: 0;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .container-sale .imagen img {
+    height: 40vh;
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .Ropa-articulo1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .Ropa-articulo2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .Ropa-articulo3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .Ropa-articulo4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .Ropa-articulo5 {
+    grid-area: 3 / 1 / 4 / 2;
+    
+  }
+
+  .container-anuncio,
+  .container-anuncio-2 {
+    height: auto;
+    padding: 2vh;
+  }
+
+  .buscador i,
+  .buscador input {
+    height: 40px;
+  }
+
+  .buscador input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .container-perfil i {
+    font-size: 2rem;
+  }
+}
+
+/* Pantallas menores a 480px */
+@media (max-width: 480px) {
+  .container-Buscador {
+    padding: 0 10px;
+  }
+
+  .buscador i,
+  .buscador input {
+    height: 35px;
+  }
+
+  .buscador input::placeholder {
+    font-size: 1rem;
+  }
+
+  .container-sale .titulo h2 {
+    font-size: 3rem;
+  }
+
+  .container-sale .titulo h1 {
+    font-size: 2.5rem;
+  }
+
+  .container-sale .imagen img {
+    height: 30vh;
+  }
+
+  .container-perfil i {
+    font-size: 1.5rem;
+  }
+}

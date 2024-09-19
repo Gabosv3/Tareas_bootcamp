@@ -1,0 +1,128 @@
+/* Estilos generales */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el ancho total */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Contenido de footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas */
+    width: 100%;
+    background-color: rgb(228, 227, 227);
+    padding: 20px;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+footer h3, footer h4, footer p, footer a {
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+footer a{
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.informacion-footer{
+    display: flex;
+}
+
+.newsletter {
+    flex: 1;
+    text-align: center;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.email {
+    width: 65%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 2px;
+    outline-color: rgb(238, 238, 134);
+}
+
+.suscribirse {
+    width: 22%;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas menores a 1440px */
+@media (max-width: 1440px) {
+    footer {
+        padding: 20px;
+    }
+
+    .email, .suscribirse {
+        width: 90%; /* Ancho más amplio en dispositivos más pequeños */
+        margin-bottom: 10px;
+    }
+}
+
+/* Pantallas menores a 768px */
+@media (max-width: 768px) {
+
+    .informacion-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center;
+        text-align: center;
+    }
+
+    footer ul {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .newsletter {
+        width: 100%; /* Ancho completo para mejor visualización en dispositivos móviles */
+    }
+
+    .redes-footer {
+        gap: 10px; /* Reduce el espacio entre elementos */
+    }
+}
+
+/* Pantallas menores a 480px */
+@media (max-width: 480px) {
+    .email, .suscribirse {
+        width: 100%; /* Ocupa el ancho completo en pantallas muy pequeñas */
+    }
+}
